@@ -1,0 +1,15 @@
+#include <p18f4550.h>
+
+// Configuração do microcontrolador para execução de instruções
+#pragma config FOSC     = HS    /// EXTERN CLOCK 8MHZ
+#pragma config WDT      = OFF   /// DISABLE WATCHDOG TIMER
+#pragma config WDTPS    = 32768 /// WATCHDOG TIMER 32768s
+#pragma config PBADEN   = OFF   /// PORTB.RB0,1,2,3,4 AS I/O DIGITAL
+#pragma config MCLRE    = OFF
+
+
+void main() {
+	int a
+	while(1) {
+	}
+}

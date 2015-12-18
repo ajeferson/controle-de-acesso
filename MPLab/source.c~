@@ -1,0 +1,27 @@
+#include <p18f4550.h>
+
+// Configuração do microcontrolador para execução de instruções
+#pragma config FOSC     = HS    /// EXTERN CLOCK 8MHZ
+#pragma config WDT      = OFF   /// DISABLE WATCHDOG TIMER
+#pragma config WDTPS    = 32768 /// WATCHDOG TIMER 32768s
+#pragma config PBADEN   = OFF   /// PORTB.RB0,1,2,3,4 AS I/O DIGITAL
+#pragma config MCLRE    = OFF
+
+// Display variables
+#define DISPLAY_RS LATEbits.LATE0
+#define DISPLAY_RW LATEbits.LATE2
+#define DISPLAY_E LATEbits.LATE1
+#define DISPLAY_DATA = LATE
+
+void main() {
+	
+	DISPLAY_RS = 1;
+	DISPLAY_RW = 0;
+	DISPLAY_E = 1;
+	DISPLAY_E = 0;
+	
+	DISPLAY_DATA = 'A';
+
+	while(1) {
+	}
+}
