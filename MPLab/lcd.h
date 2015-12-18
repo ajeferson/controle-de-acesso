@@ -32,6 +32,9 @@ void lcdInicioLinha1();
 /** Faz o cursor do LCD ir para o inicio da linha 2 */
 void lcdInicioLinha2();
 
+/** Desloca o cursor do LCD para direita */
+void lcdDeslocaDireita();
+
 /** Implementacoes */
 
 void lcdEnvia(char instrucao, int tipo) {
@@ -96,6 +99,10 @@ void lcdInicioLinha1() {
 
 void lcdInicioLinha2() {
 	lcdEnviaInstrucao(0xc0);
+}
+
+void lcdDeslocaDireita() {
+	lcdEnviaInstrucao(0x14);
 }
 
 #endif

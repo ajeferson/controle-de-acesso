@@ -40,8 +40,12 @@ void main() {
 	lcdInicializa();
 
 	menuInicial();
+	menuSenha();
+	appendaSenha('*', 0);
+	appendaSenha('*', 1);
+	appendaSenha('*', 2);
+	appendaSenha('*', 3);
 
 	while(1) {
 	}
 }
-	

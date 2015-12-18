@@ -8,6 +8,11 @@
 /** Printa no LCD o menu com as opcoes de cadastro, remocao e logar */
 void menuInicial();
 
+/** Mostra o menu que pede para o usuário digitar a senha. */
+void menuSenha();
+
+/** Coloca um caracter * na linha da senha. */
+void appendaSenha();
 
 /** Implementacoes */
 
@@ -19,6 +24,22 @@ void menuInicial() {
 	lcdEscrevePalavra(linha1, 16);
 	lcdInicioLinha2();
 	lcdEscrevePalavra(linha2, 16);
+}
+
+void menuSenha() {
+	char linha1[15] = "Digite a senha:";
+	lcdLimpa();
+	lcdInicioLinha1();
+	lcdEscrevePalavra(linha1, 15);
+}
+
+void appendaSenha(char valor, char deslocamento) {
+	int i;
+	lcdInicioLinha2();
+	for(i=0; i<deslocamento; i++) {
+		lcdDeslocaDireita();
+	}
+	lcdEscreveCaracter(valor);
 }
 
 #endif
