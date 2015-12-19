@@ -29,7 +29,6 @@
 #include "menu.h"
 #include "teclado.h" 
 
-#pragma mark Definicao das funcoes
 void configuraSistema();
 void lcdEnviaInstrucao(char instrucao);
 void lcdEnviaDado(char dado);
@@ -50,6 +49,7 @@ void main() {
 
 	/** Estados
 	     1 - Menu inicial
+	     2 - Digitando uma senha
 	*/
 
 	configuraSistema();
@@ -58,6 +58,6 @@ void main() {
 
 	while(1) {
 		tecla = varreTeclado();
-		processaTecla(tecla, estado);
+		estado = processaTecla(tecla, estado);
 	}
 }

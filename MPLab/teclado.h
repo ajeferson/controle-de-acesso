@@ -7,10 +7,15 @@
 char varreTeclado();
 
 /** Executa alguma acao de acordo com a tecla pressionada pelo usuario */
-void processaTecla(char tecla, char estado);
+char processaTecla(char tecla, char estado);
 
 /** Processa uma tecla apertada estando no menu inicial */
-void processaMenuInicial(char tecla);
+char processaMenuInicial(char tecla, char estado);
+
+/** Processa uma tecla digitada estando no menu de inserir senha */
+char processaSenha(char tecla, char secreto);
+
+static char deslocamento = 0;
 
 // Implementacoes
 
@@ -51,29 +56,57 @@ char varreTeclado() {
 	if (Coluna_3) { while (Coluna_3) {} return '#';}
 	if (Coluna_4) { while (Coluna_4) {} return 'D';}
 
-	return '0';
+	return '\0';
 
 }
 
-void processaTecla(char tecla, char estado) {
+char processaTecla(char tecla, char estado) {
+
 	if(tecla != '\0') {
 		// Menu inicial
 		if(estado == 1) {
-			processaMenuInicial(tecla);
-		} 
+			return processaMenuInicial(tecla, estado);
+		} else if (estado == 2) {
+			return processaSenha(tecla, 1);
+		}
 	}
+
+	return estado;
 }
 
-void processaMenuInicial(char tecla) {
+char processaMenuInicial(char tecla, char estado) {
 	switch(tecla) {
 		case 1:
 			break;
 		case 2:
 			break;
 		case 3:
+			deslocamento = 0;
 			menuSenha();
-			break;
+			return 2; // Menu de digitar senha
 	}
+
+	return estado;
+
+}
+
+char processaSenha(char tecla, char secreto) {
+	int i;
+
+	lcdInicioLinha2();
+
+	for(i=0; i<deslocamento; i++) {
+		lcdDeslocaDireita();
+	}
+
+	if(secreto) {
+		lcdEscreveCaracter('*');
+	} else {
+		lcdEscreveCaracter(tecla + 48); // Offset dos chars dos numeros
+	}
+
+	deslocamento++;
+	return 2;
 }
 
 #endif

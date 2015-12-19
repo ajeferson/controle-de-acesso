@@ -1,4 +1,3 @@
-Warning[2002] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c 32 : unknown pragma 'mark'
-Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 20 : null-terminated initializer string too long
-Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 21 : null-terminated initializer string too long
-Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 30 : null-terminated initializer string too long
+Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 17 : null-terminated initializer string too long
+Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 18 : null-terminated initializer string too long
+Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 27 : null-terminated initializer string too long

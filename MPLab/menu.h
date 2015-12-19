@@ -11,9 +11,6 @@ void menuInicial();
 /** Mostra o menu que pede para o usuário digitar a senha. */
 void menuSenha();
 
-/** Coloca um caracter * na linha da senha. */
-void appendaSenha();
-
 /** Implementacoes */
 
 void menuInicial() {
@@ -31,15 +28,6 @@ void menuSenha() {
 	lcdLimpa();
 	lcdInicioLinha1();
 	lcdEscrevePalavra(linha1, 15);
-}
-
-void appendaSenha(char valor, char deslocamento) {
-	int i;
-	lcdInicioLinha2();
-	for(i=0; i<deslocamento; i++) {
-		lcdDeslocaDireita();
-	}
-	lcdEscreveCaracter(valor);
 }
 
 #endif
