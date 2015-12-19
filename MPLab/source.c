@@ -52,6 +52,7 @@ void main() {
 	/** Estados
 	     1 - Menu inicial
 	     2 - Digitando uma senha
+	     3 - Acesso permitido / negado
 	*/
 
 	configuraSistema();

@@ -31,8 +31,11 @@ char processaTecla(char tecla, char estado) {
 		// Menu inicial
 		if(estado == 1) {
 			return processaMenuInicial(tecla, estado);
-		} else if (estado == 2) {
+		} else if(estado == 2) {
 			return processaSenha(tecla, 1);
+		} else if(estado == 3) {
+			menuInicial();
+			return 1;
 		}
 	}
 
@@ -89,9 +92,13 @@ char processaSenha(char tecla, char secreto) {
 				lcdAcessoNegado();
 			}
 
+			return 3;
+
 		}
 	}
+
 	return 2;
+
 }
 
 char checaSenha() {
