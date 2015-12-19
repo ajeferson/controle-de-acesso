@@ -58,6 +58,8 @@ void main() {
 	     1 - Menu inicial
 	     2 - Digitando uma senha
 	     3 - Acesso permitido / negado
+	     4 - Digitar senha no modo de cadastro
+	     5 - Digitando senha do novo usuario
 	*/
 
 	configuraSistema();
