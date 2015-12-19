@@ -9,6 +9,11 @@ void terminalEscreveLetra(char letra);
 /** Escreve uma linha no terminal */
 void terminalEscreveLinha(char *linha, int tamanho);
 
+/** Escreve no terminal que uma pessoa tentou realizar um login */
+void terminalEscreveTentativaLogin();
+
+/** Escreve no terminal que um usuario conseguiu acesso */
+void terminalEscreveLoginRealizado(char usuario);
 
 // Implementacoes
 
@@ -59,7 +64,7 @@ void terminalEscreveLetra(char letra) {
 		TERMINAL = aux; //7
 		Delay10TCYx(delay);
 
-		aux = (letra << 0) & mask;
+		aux = letra & mask;
 		aux = aux >> 7;
 		TERMINAL = aux; //8
 		Delay10TCYx(delay);
@@ -75,6 +80,17 @@ void terminalEscreveLinha(char *linha, int tamanho) {
 		terminalEscreveLetra(linha[i]);
 	}
 	terminalEscreveLetra(13);
+}
+
+void terminalEscreveTentativaLogin() {
+	char linha[19] = "Tentativa de login";
+	terminalEscreveLinha(linha, 18);
+}
+
+void terminalEscreveLoginRealizado(char usuario) {
+	char linha[27] = "Usuario X conseguiu acesso";
+	linha[8] = usuario + 48;
+	terminalEscreveLinha(linha, 26);
 }
 
 #endif

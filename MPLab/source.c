@@ -32,8 +32,8 @@
 #include "lcd.h"
 #include "menu.h"
 #include "teclado.h"
-#include "core.h"
 #include "terminal.h"
+#include "core.h"
 
 void configuraSistema();
 void lcdEnviaInstrucao(char instrucao);
@@ -53,7 +53,6 @@ void main() {
 
 	char tecla;
 	char estado = 1;
-	char kakaroto[9] = "Kakaroto";
 
 	/** Estados
 	     1 - Menu inicial
@@ -66,7 +65,6 @@ void main() {
 	menuInicial();
 
 	while(1) {
-		terminalEscreveLinha(kakaroto, 8);
 		tecla = varreTeclado();
 		estado = processaTecla(tecla, estado);
 	}

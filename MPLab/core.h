@@ -61,6 +61,7 @@ char processaMenuInicial(char tecla, char estado) {
 char processaSenha(char tecla, char secreto) {
 	
 	int i;
+	char usuario;
 
 	if(tecla != '*') {
 		
@@ -85,11 +86,14 @@ char processaSenha(char tecla, char secreto) {
 
 			// Digitou toda a senha
 			senha[deslocamento] = '\0';
+			usuario = checaSenha(senha);
 
-			if(checaSenha(senha) >= 0) {
-				lcdAcessoPermitido();	
+			if(usuario >= 0) {
+				lcdAcessoPermitido();
+				terminalEscreveLoginRealizado(usuario == '\0' ? 0 : usuario);
 			} else {
 				lcdAcessoNegado();
+				terminalEscreveTentativaLogin();
 			}
 
 			return 3;
