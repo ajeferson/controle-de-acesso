@@ -50,19 +50,19 @@ char varreTeclado() {
 	Linha_1=0; //varrendo a quarta linha
 	Linha_2=0;
 	Linha_3=0;
-	Linha_4=0;
+	Linha_4=1;
 	if (Coluna_1) { while (Coluna_1) {} return '*';}
 	if (Coluna_2) { while (Coluna_2) {} return 0;}
 	if (Coluna_3) { while (Coluna_3) {} return '#';}
 	if (Coluna_4) { while (Coluna_4) {} return 'D';}
 
-	return '\0';
+	return 'K';
 
 }
 
 char processaTecla(char tecla, char estado) {
 
-	if(tecla != '\0') {
+	if(tecla != 'K') {
 		// Menu inicial
 		if(estado == 1) {
 			return processaMenuInicial(tecla, estado);
@@ -91,21 +91,25 @@ char processaMenuInicial(char tecla, char estado) {
 }
 
 char processaSenha(char tecla, char secreto) {
+	
 	int i;
 
-	lcdInicioLinha2();
+	if(tecla != '*' && tecla != '#') {
 
-	for(i=0; i<deslocamento; i++) {
-		lcdDeslocaDireita();
+		lcdInicioLinha2();
+
+		for(i=0; i<deslocamento; i++) {
+			lcdDeslocaDireita();
+		}
+
+		if(secreto) {
+			lcdEscreveCaracter('*');
+		} else {
+			lcdEscreveCaracter(tecla + 48); // Offset dos chars dos numeros
+		}
+
+		deslocamento++;
 	}
-
-	if(secreto) {
-		lcdEscreveCaracter('*');
-	} else {
-		lcdEscreveCaracter(tecla + 48); // Offset dos chars dos numeros
-	}
-
-	deslocamento++;
 	return 2;
 }
 
