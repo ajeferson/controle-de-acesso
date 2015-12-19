@@ -6,6 +6,11 @@
 /** Faz a varredura do teclado e retorna a tecla apertada. */
 char varreTeclado();
 
+/** Executa alguma acao de acordo com a tecla pressionada pelo usuario */
+void processaTecla(char tecla, char estado);
+
+/** Processa uma tecla apertada estando no menu inicial */
+void processaMenuInicial(char tecla);
 
 // Implementacoes
 
@@ -48,6 +53,27 @@ char varreTeclado() {
 
 	return '0';
 
+}
+
+void processaTecla(char tecla, char estado) {
+	if(tecla != '\0') {
+		// Menu inicial
+		if(estado == 1) {
+			processaMenuInicial(tecla);
+		} 
+	}
+}
+
+void processaMenuInicial(char tecla) {
+	switch(tecla) {
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			menuSenha();
+			break;
+	}
 }
 
 #endif

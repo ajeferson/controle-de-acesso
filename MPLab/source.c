@@ -46,19 +46,18 @@ void configuraSistema() {
 void main() {
 
 	char tecla;
+	char estado = 1;
+
+	/** Estados
+	     1 - Menu inicial
+	*/
 
 	configuraSistema();
-
 	lcdInicializa();
-
 	menuInicial();
-	menuSenha();
-	appendaSenha('*', 0);
-	appendaSenha('*', 1);
-	appendaSenha('*', 2);
-	appendaSenha('*', 3);
 
 	while(1) {
 		tecla = varreTeclado();
+		processaTecla(tecla, estado);
 	}
 }
