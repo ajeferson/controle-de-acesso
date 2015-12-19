@@ -20,6 +20,12 @@ void menuUsuarioCadastrado(char usuario);
 /** Mostra uma mensagem de memoria cheia */
 void menuSemEspacoDisponivel();
 
+/** Mostra o menu que pede o numero do usuario a ser deletado. */
+void menuRemoveUsuario();
+
+/** Menu alertando que nao ha usuarios cadastrados */
+void menuNenhumUsuario();
+
 /** Implementacoes */
 
 void menuInicial() {
@@ -62,6 +68,20 @@ void menuSemEspacoDisponivel() {
 	lcdLimpa();
 	lcdInicioLinha1();
 	lcdEscrevePalavra(linha1, 13);
+}
+
+void menuRemoveUsuario() {
+	char linha1[17] = "Num. do usuario:";
+	lcdLimpa();
+	lcdInicioLinha1();
+	lcdEscrevePalavra(linha1, 16);
+}
+
+void menuNenhumUsuario() {
+	char linha1[15] = "Nenhum usuario";
+	lcdLimpa();
+	lcdInicioLinha1();
+	lcdEscrevePalavra(linha1, 14);
 }
 
 #endif

@@ -1,7 +1,7 @@
 Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h 115 : null-terminated initializer string too long
 Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h 121 : null-terminated initializer string too long
-Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 26 : null-terminated initializer string too long
-Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 27 : null-terminated initializer string too long
-Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 36 : null-terminated initializer string too long
-Warning[2058] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h 55 : call of function without prototype
-Warning[2058] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h 129 : call of function without prototype
+Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 32 : null-terminated initializer string too long
+Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 33 : null-terminated initializer string too long
+Warning[2073] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h 42 : null-terminated initializer string too long
+Warning[2058] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h 60 : call of function without prototype
+Warning[2058] Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h 144 : call of function without prototype

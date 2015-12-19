@@ -30,6 +30,9 @@ int cadastraUsuario();
 /** Verifica se ainda ha espaco no array para o cadastro de usuarios. */
 int verificaEspaco();
 
+/** Remove um usuario do array */
+char removeUsuario(char usuario);
+
 // Implementacoes
 
 char processaTecla(char tecla, char estado) {
@@ -43,6 +46,8 @@ char processaTecla(char tecla, char estado) {
 		} else if(estado == 3) {
 			menuInicial();
 			return 1;
+		} else if(estado == 6) {
+			return processaSenha(tecla, 0, estado);
 		}
 	}
 
@@ -61,7 +66,14 @@ char processaMenuInicial(char tecla, char estado) {
 				return 3;
 			}
 		case 2:
-			break;
+			if(countSenhas > 1) {
+				deslocamento = 0;
+				menuSenha();
+				return 6;
+			} else {
+				menuNenhumUsuario();
+				return 3;
+			}
 		case 3:
 			deslocamento = 0;
 			menuSenha();
@@ -98,21 +110,27 @@ char processaSenha(char tecla, char secreto, char estado) {
 
 		} else {
 
+			if(deslocamento == 0) {
+				return estado;
+			}
+
 			// Digitou toda a senha
 			senha[deslocamento] = '\0';
-			usuario = checaSenha(senha);
 
-			if(estado == 2) { // Login
-				if(usuario >= 0) {
-					lcdAcessoPermitido();
-					terminalEscreveLoginRealizado(usuario);
-				} else {
+			if(estado != 5) {
+				usuario = checaSenha(senha);
+				if(usuario < 0) {
 					lcdAcessoNegado();
 					terminalEscreveTentativaLogin();
+					//TODO melhorar logs
+					return 3;
 				}
+			}
 
+			if(estado == 2) { // Login
+				lcdAcessoPermitido();
+				terminalEscreveLoginRealizado(usuario);
 				return 3;
-
 			} else if(estado == 4) { // Pre-Cadastro
 				if(usuario == 0) {
 					deslocamento = 0;
@@ -123,17 +141,16 @@ char processaSenha(char tecla, char secreto, char estado) {
 					terminalEscreveTentativaLogin();
 				}
 			} else if(estado == 5) { // Cadastro
-				if(deslocamento == 0) {
-					return 5;
-				}
 				usuario = cadastraUsuario();
 				menuUsuarioCadastrado(usuario);
 				return 3;
-				
-				
+			} else if(estado == 6) { // Pre-remocao
+				if(usuario != 0) {
+				} else {
+					// Usuario invalido
+					return 3;
+				}
 			}
-
-			return 3; // falta um else ainda
 
 		}
 	}
@@ -169,6 +186,14 @@ int verificaEspaco() {
 			return 1;
 		}
 		i++;
+	}
+	return 0;
+}
+
+char removeUsuario(char usuario) {
+	if(usuario > 0 && usuario < 11 && senhas[usuario][0] != '\0') {
+		senhas[usuario][0] = '\0';
+		return 1;
 	}
 	return 0;
 }
