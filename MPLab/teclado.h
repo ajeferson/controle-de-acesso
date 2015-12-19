@@ -6,17 +6,6 @@
 /** Faz a varredura do teclado e retorna a tecla apertada. */
 char varreTeclado();
 
-/** Executa alguma acao de acordo com a tecla pressionada pelo usuario */
-char processaTecla(char tecla, char estado);
-
-/** Processa uma tecla apertada estando no menu inicial */
-char processaMenuInicial(char tecla, char estado);
-
-/** Processa uma tecla digitada estando no menu de inserir senha */
-char processaSenha(char tecla, char secreto);
-
-static char deslocamento = 0;
-
 // Implementacoes
 
 char varreTeclado() {
@@ -58,59 +47,6 @@ char varreTeclado() {
 
 	return 'K';
 
-}
-
-char processaTecla(char tecla, char estado) {
-
-	if(tecla != 'K') {
-		// Menu inicial
-		if(estado == 1) {
-			return processaMenuInicial(tecla, estado);
-		} else if (estado == 2) {
-			return processaSenha(tecla, 1);
-		}
-	}
-
-	return estado;
-}
-
-char processaMenuInicial(char tecla, char estado) {
-	switch(tecla) {
-		case 1:
-			break;
-		case 2:
-			break;
-		case 3:
-			deslocamento = 0;
-			menuSenha();
-			return 2; // Menu de digitar senha
-	}
-
-	return estado;
-
-}
-
-char processaSenha(char tecla, char secreto) {
-	
-	int i;
-
-	if(tecla != '*' && tecla != '#') {
-
-		lcdInicioLinha2();
-
-		for(i=0; i<deslocamento; i++) {
-			lcdDeslocaDireita();
-		}
-
-		if(secreto) {
-			lcdEscreveCaracter('*');
-		} else {
-			lcdEscreveCaracter(tecla + 48); // Offset dos chars dos numeros
-		}
-
-		deslocamento++;
-	}
-	return 2;
 }
 
 #endif

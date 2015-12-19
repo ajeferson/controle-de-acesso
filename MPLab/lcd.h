@@ -35,6 +35,12 @@ void lcdInicioLinha2();
 /** Desloca o cursor do LCD para direita */
 void lcdDeslocaDireita();
 
+/** Mostra a mensagem de acesso permitido */
+void lcdAcessoPermitido();
+
+/** Mostra a mensagem de acesso negado para o usuário */
+void lcdAcessoNegado();
+
 /** Implementacoes */
 
 void lcdEnvia(char instrucao, int tipo) {
@@ -103,6 +109,18 @@ void lcdInicioLinha2() {
 
 void lcdDeslocaDireita() {
 	lcdEnviaInstrucao(0x14);
+}
+
+void lcdAcessoPermitido() {
+	char linha1[16] = "Acesso Permitido";
+	lcdLimpa();
+	lcdEscrevePalavra(linha1, 16);
+}
+
+void lcdAcessoNegado() {
+	char linha1[13] = "Acesso Negado";
+	lcdLimpa();
+	lcdEscrevePalavra(linha1, 13);
 }
 
 #endif

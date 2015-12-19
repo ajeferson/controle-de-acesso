@@ -1,5 +1,6 @@
 #include <p18f4550.h>
 #include <delays.h>
+#include <string.h>
 
 // Configuração do microcontrolador para execução de instruções
 #pragma config FOSC = HS    /// EXTERN CLOCK 8MHZ
@@ -27,7 +28,8 @@
 // Include da galera
 #include "lcd.h"
 #include "menu.h"
-#include "teclado.h" 
+#include "teclado.h"
+#include "core.h"
 
 void configuraSistema();
 void lcdEnviaInstrucao(char instrucao);
