@@ -25,11 +25,15 @@
 #define Coluna_3 PORTBbits.RB1
 #define Coluna_4 PORTBbits.RB0
 
+// Variaveis de terminal
+#define TERMINAL LATCbits.LATC0
+
 // Include da galera
 #include "lcd.h"
 #include "menu.h"
 #include "teclado.h"
 #include "core.h"
+#include "terminal.h"
 
 void configuraSistema();
 void lcdEnviaInstrucao(char instrucao);
@@ -39,15 +43,17 @@ void delay_us(int quantidade);
 /** Seta os tris da galera */
 void configuraSistema() {
 	ADCON1=0x0F;
-	TRISD=0b00000000;  
-	TRISE=0b11111000;
-	TRISB=0b00001111;
+	TRISD = 0b00000000;  
+	TRISE = 0b11111000;
+	TRISB = 0b00001111;
+	TRISC = 0b00000000;
 }
 
 void main() {
 
 	char tecla;
 	char estado = 1;
+	char kakaroto[9] = "Kakaroto";
 
 	/** Estados
 	     1 - Menu inicial
@@ -60,6 +66,7 @@ void main() {
 	menuInicial();
 
 	while(1) {
+		terminalEscreveLinha(kakaroto, 8);
 		tecla = varreTeclado();
 		estado = processaTecla(tecla, estado);
 	}
