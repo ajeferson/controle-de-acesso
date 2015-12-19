@@ -27,6 +27,9 @@ char checaSenha(char senha[]);
 /** Coloca uma nova senha no array de senhas */
 int cadastraUsuario();
 
+/** Verifica se ainda ha espaco no array para o cadastro de usuarios. */
+int verificaEspaco();
+
 // Implementacoes
 
 char processaTecla(char tecla, char estado) {
@@ -49,10 +52,14 @@ char processaTecla(char tecla, char estado) {
 char processaMenuInicial(char tecla, char estado) {
 	switch(tecla) {
 		case 1:
-			deslocamento = 0;
-			menuSenha();
-			return 4;
-			break;
+			if(verificaEspaco()) {
+				deslocamento = 0;
+				menuSenha();
+				return 4;
+			} else {
+				menuSemEspacoDisponivel();
+				return 3;
+			}
 		case 2:
 			break;
 		case 3:
@@ -151,7 +158,19 @@ int cadastraUsuario() {
 		i++;
 	}
 	strcpy(senhas[i], senha);
+	countSenhas++;
 	return i;
+}
+
+int verificaEspaco() {
+	char i = 0;
+	while(i<11) {
+		if(senhas[i][0] == '\0') {
+			return 1;
+		}
+		i++;
+	}
+	return 0;
 }
 
 #endif

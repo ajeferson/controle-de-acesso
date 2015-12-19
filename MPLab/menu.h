@@ -17,6 +17,9 @@ void menuSenhaCadastro();
 /** Mostra no LCD um menu dizendo que um usuario foi cadastrado */
 void menuUsuarioCadastrado(char usuario);
 
+/** Mostra uma mensagem de memoria cheia */
+void menuSemEspacoDisponivel();
+
 /** Implementacoes */
 
 void menuInicial() {
@@ -52,6 +55,13 @@ void menuUsuarioCadastrado(char usuario) {
 	lcdEscrevePalavra(linha1, 9);
 	lcdInicioLinha2();
 	lcdEscrevePalavra(linha2, 10);
+}
+
+void menuSemEspacoDisponivel() {
+	char linha1[14] = "Memoria cheia";
+	lcdLimpa();
+	lcdInicioLinha1();
+	lcdEscrevePalavra(linha1, 13);
 }
 
 #endif
