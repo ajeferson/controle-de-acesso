@@ -60,7 +60,8 @@ void main() {
 	     3 - Acesso permitido / negado
 	     4 - Digitar senha no modo de cadastro
 	     5 - Digitando senha do novo usuario
-	     6 - Digitando o numero do usuario a deletar
+	     6 - Digitar senha no modo de remocao
+	     7 - Digitando o numero do usuario a deletar
 	*/
 
 	configuraSistema();

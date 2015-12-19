@@ -26,6 +26,12 @@ void menuRemoveUsuario();
 /** Menu alertando que nao ha usuarios cadastrados */
 void menuNenhumUsuario();
 
+/** Menu mostrando que um usuario e invalido */
+void menuUsuarioInvalido();
+
+/** Menu mostrando que um usuario foi removido */
+void menuUsuarioRemovido(char usuario);
+
 /** Implementacoes */
 
 void menuInicial() {
@@ -82,6 +88,24 @@ void menuNenhumUsuario() {
 	lcdLimpa();
 	lcdInicioLinha1();
 	lcdEscrevePalavra(linha1, 14);
+}
+
+void menuUsuarioInvalido() {
+	char linha1[17] = "Usuario invalido";
+	lcdLimpa();
+	lcdInicioLinha1();
+	lcdEscrevePalavra(linha1, 16);
+}
+
+void menuUsuarioRemovido(char usuario) {
+	char linha1[10] = "Usuario X";
+	char linha2[9] = "deletado";
+	linha1[8] = usuario + 48;
+	lcdLimpa();
+	lcdInicioLinha1();
+	lcdEscrevePalavra(linha1, 9);
+	lcdInicioLinha2();
+	lcdEscrevePalavra(linha2, 8);
 }
 
 #endif
