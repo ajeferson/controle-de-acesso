@@ -7,7 +7,7 @@ char deslocamento = 0;
 char countSenhas = 1;
 char senhas[11][17] = {
 	{1, 2, 3, 4, 5, 6, '\0'},
-	{'\0'}, {'\0'}, {'\0'}, {'\0'}, {'\0'}, {'\0'}, {'\0'}, {'\0'}, {'\0'}, {'\0'}
+	{'K'}, {'K'}, {'K'}, {'K'}, {'K'}, {'K'}, {'K'}, {'K'}, {'K'}, {'K'}
 };
 
 // Definicoes
@@ -195,7 +195,7 @@ char checaSenha() {
 
 int cadastraUsuario() {
 	char i = 0;
-	while(i<11 && senhas[i][0] != '\0') {
+	while(i<11 && senhas[i][0] != 'K') {
 		i++;
 	}
 	strcpy(senhas[i], senha);
@@ -206,7 +206,7 @@ int cadastraUsuario() {
 int verificaEspaco() {
 	char i = 0;
 	while(i<11) {
-		if(senhas[i][0] == '\0') {
+		if(senhas[i][0] == 'K') {
 			return 1;
 		}
 		i++;
@@ -215,8 +215,8 @@ int verificaEspaco() {
 }
 
 char removeUsuario(char usuario) {
-	if(usuario > 0 && usuario < 11 && senhas[usuario][0] != '\0') {
-		senhas[usuario][0] = '\0';
+	if(usuario > 0 && usuario < 11 && senhas[usuario][0] != 'K') {
+		senhas[usuario][0] = 'K';
 		return 1;
 	}
 	return 0;
@@ -224,7 +224,7 @@ char removeUsuario(char usuario) {
 
 int indexDoUsuario() {
 	char i;
-	senha[deslocamento] = '\0';
+	senha[deslocamento] = 'K';
 	for(i=0;i<deslocamento;i++) {
 		senha[i] = senha[i] + 48;
 	}
