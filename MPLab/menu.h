@@ -48,17 +48,17 @@ void menuInicial() {
 }
 
 void menuSenha() {
-	char linha1[15] = "Digite a senha:";
+	char linha1[7] = "Senha:";
 	lcdLimpa();
 	lcdInicioLinha1();
-	lcdEscrevePalavra(linha1, 15);
+	lcdEscrevePalavra(linha1, 6);
 }
 
 void menuSenhaCadastro() {
-	char linha1[17] = "Cadastro usuario";
+	char linha1[16] = "Cad. de usuario";
 	lcdLimpa();
 	lcdInicioLinha1();
-	lcdEscrevePalavra(linha1, 16);
+	lcdEscrevePalavra(linha1, 15);
 }
 
 void menuUsuarioCadastrado(char usuario) {

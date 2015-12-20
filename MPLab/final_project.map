@@ -1,29 +1,29 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Sun Dec 20 16:11:42 2015
+Linker Map File - Created Sun Dec 20 16:15:05 2015
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
                    .cinit    romdata   0x000006    program   0x00000e
-           .code_source.o       code   0x000014    program   0x001d40
-                   STDLIB       code   0x001d54    program   0x0000ea
-               _cinit_scn       code   0x001e3e    program   0x00009e
-                   STRING       code   0x001edc    program   0x000082
-             D10KTCYXCODE       code   0x001f5e    program   0x00002e
-              D1KTCYXCODE       code   0x001f8c    program   0x000020
-                    .code       code   0x001fac    program   0x000020
-             _startup_scn       code   0x001fcc    program   0x00001c
-              D10TCYXCODE       code   0x001fe8    program   0x000016
-           .code___init.o       code   0x001ffe    program   0x000002
-        .idata_source.o_i    romdata   0x002000    program   0x0000bd
-        .romdata_source.o    romdata   0x002000    program   0x000000
-         .romdata_c018i.o    romdata   0x002000    program   0x000000
-             .stringtable    romdata   0x002000    program   0x000000
-        .romdata___init.o    romdata   0x002000    program   0x000000
-        .idata___init.o_i    romdata   0x0020bd    program   0x000000
-         .idata_c018i.o_i    romdata   0x0020bd    program   0x000000
-            .code_c018i.o       code   0x0020be    program   0x000000
+           .code_source.o       code   0x000014    program   0x001d1a
+                   STDLIB       code   0x001d2e    program   0x0000ea
+               _cinit_scn       code   0x001e18    program   0x00009e
+                   STRING       code   0x001eb6    program   0x000082
+             D10KTCYXCODE       code   0x001f38    program   0x00002e
+              D1KTCYXCODE       code   0x001f66    program   0x000020
+                    .code       code   0x001f86    program   0x000020
+             _startup_scn       code   0x001fa6    program   0x00001c
+              D10TCYXCODE       code   0x001fc2    program   0x000016
+           .code___init.o       code   0x001fd8    program   0x000002
+        .idata_source.o_i    romdata   0x001fda    program   0x0000bd
+        .romdata_source.o    romdata   0x001fda    program   0x000000
+         .romdata_c018i.o    romdata   0x001fda    program   0x000000
+             .stringtable    romdata   0x001fda    program   0x000000
+        .romdata___init.o    romdata   0x001fda    program   0x000000
+        .idata___init.o_i    romdata   0x002097    program   0x000000
+         .idata_c018i.o_i    romdata   0x002097    program   0x000000
+            .code_c018i.o       code   0x002098    program   0x000000
   .config_300001_source.o    romdata   0x300001    program   0x000001
   .config_300003_source.o    romdata   0x300003    program   0x000001
   .config_300005_source.o    romdata   0x300005    program   0x000001
@@ -45,70 +45,70 @@ Linker Map File - Created Sun Dec 20 16:11:42 2015
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x0020bc      
+                            0x000000    0x002096      
                             0x300001    0x300001      
                             0x300003    0x300003      
                             0x300005    0x300005      
-            8384 out of 33048 program addresses used, program memory utilization is 25%
+            8346 out of 33048 program addresses used, program memory utilization is 25%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                   D10K_1   0x001f6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x001f76    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x001f68    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10_1   0x001ff8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x001ff0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D1K_1   0x001f98    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x001f96    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-             Delay10KTCYx   0x001f5e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay10TCYx   0x001fe8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-              Delay1KTCYx   0x001f8c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-       _D10KTCYXCODE_0010   0x001f6e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x001f7a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-        _D10TCYXCODE_000A   0x001ff2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x001ff4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x001ff6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D1KTCYXCODE_0010   0x001f9c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x001fa2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                   D10K_1   0x001f44    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x001f50    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x001f42    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x001fd2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x001fca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D1K_1   0x001f72    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x001f70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+             Delay10KTCYx   0x001f38    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x001fc2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+              Delay1KTCYx   0x001f66    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+       _D10KTCYXCODE_0010   0x001f48    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x001f54    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x001fcc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x001fce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x001fd0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D1KTCYXCODE_0010   0x001f76    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x001f7c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00001   0x001fe6    program     static                          
-       ___return_lbl00002   0x001eda    program     static                          
+       ___return_lbl00001   0x001fc0    program     static                          
+       ___return_lbl00002   0x001eb4    program     static                          
        ___return_lbl00017   0x0006e0    program     static                          
                __config_0   0x300001    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
                __config_1   0x300003    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
                __config_2   0x300005    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
-                   __init   0x001ffe    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+                   __init   0x001fd8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
                __tmplbl_0   0x0006bc    program     static                          
                __tmplbl_1   0x0006b8    program     static                          
-            __zero_memory   0x001fac    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                _do_cinit   0x001e3e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+            __zero_memory   0x001f86    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                _do_cinit   0x001e18    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 _startup   0x001fcc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     atoi   0x001d54    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-          cadastraUsuario   0x001aa2    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-               checaSenha   0x0019fe    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-                compare_l   0x001fc2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-         configuraSistema   0x001ce6    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
-                copy_loop   0x001eb0    program     static                          
-            copy_one_byte   0x001eb6    program     static                          
-                     done   0x001eda    program     static                          
-             done_copying   0x001ec4    program     static                          
-           indexDoUsuario   0x001c5c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-                     jEnd   0x001f06    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                     jEnd   0x001e12    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jEndLoop   0x001dfa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                    jLoop   0x001f44    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
-                    jLoop   0x001efc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                    jLoop   0x001dac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                  jSkipWS   0x001d82    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jSkipWS1   0x001d94    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jTstSign   0x001d98    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign1   0x001da4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign2   0x001daa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign3   0x001dac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 _startup   0x001fa6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     atoi   0x001d2e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+          cadastraUsuario   0x001a7c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+               checaSenha   0x0019d8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+                compare_l   0x001f9c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+         configuraSistema   0x001cc0    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
+                copy_loop   0x001e8a    program     static                          
+            copy_one_byte   0x001e90    program     static                          
+                     done   0x001eb4    program     static                          
+             done_copying   0x001e9e    program     static                          
+           indexDoUsuario   0x001c36    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+                     jEnd   0x001ee0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                     jEnd   0x001dec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jEndLoop   0x001dd4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                    jLoop   0x001f1e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
+                    jLoop   0x001ed6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                    jLoop   0x001d86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                  jSkipWS   0x001d5c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jSkipWS1   0x001d6e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jTstSign   0x001d72    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign1   0x001d7e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign2   0x001d84    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign3   0x001d86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
           lcdAcessoNegado   0x0008ac    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
        lcdAcessoPermitido   0x00082c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
         lcdDeslocaDireita   0x000822    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
@@ -121,24 +121,24 @@ Linker Map File - Created Sun Dec 20 16:11:42 2015
           lcdInicioLinha1   0x00080e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
           lcdInicioLinha2   0x000818    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
                  lcdLimpa   0x000730    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
-                     loop   0x001fdc    program     static                          
-                   loop_h   0x001fba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_l   0x001fc4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     main   0x001cfc    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
-           menuCarregando   0x000ea0    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+                     loop   0x001fb6    program     static                          
+                   loop_h   0x001f94    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_l   0x001f9e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     main   0x001cd6    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
+           menuCarregando   0x000e7a    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
               menuInicial   0x000920    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-        menuNenhumUsuario   0x000cda    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-        menuRemoveUsuario   0x000c54    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-  menuSemEspacoDisponivel   0x000bda    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+        menuNenhumUsuario   0x000cb4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+        menuRemoveUsuario   0x000c2e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+  menuSemEspacoDisponivel   0x000bb4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
                 menuSenha   0x000a0a    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-        menuSenhaCadastro   0x000a8a    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-    menuUsuarioCadastrado   0x000b10    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-      menuUsuarioInvalido   0x000d58    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-      menuUsuarioRemovido   0x000dde    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-      processaMenuInicial   0x001776    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-            processaSenha   0x0017fa    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-            processaTecla   0x0016ce    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-            removeUsuario   0x001bbc    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+        menuSenhaCadastro   0x000a68    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+    menuUsuarioCadastrado   0x000aea    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+      menuUsuarioInvalido   0x000d32    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+      menuUsuarioRemovido   0x000db8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+      processaMenuInicial   0x001750    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+            processaSenha   0x0017d4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+            processaTecla   0x0016a8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+            removeUsuario   0x001b96    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
              rtcEnviaByte   0x000104    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
      rtcEnviaComandoEDado   0x000264    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
             rtcInicializa   0x0003b8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
@@ -152,20 +152,20 @@ Linker Map File - Created Sun Dec 20 16:11:42 2015
              rtcLeSegundo   0x0004b8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
         rtcNibbleParaChar   0x000014    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
         rtcSCKLEnviaPulso   0x0000e8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
-                   strcmp   0x001edc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                   strcpy   0x001f1c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
-     terminalEscreveLetra   0x000ffa    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-     terminalEscreveLinha   0x0011c8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-terminalEscreveLoginRealizado   0x001306    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-terminalEscreveTentativaDelecao   0x001608    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-terminalEscreveTentativaLogin   0x001248    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-        terminalMomentLog   0x0014c4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-terminalUsuarioCadastrado   0x0013f0    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-  terminalUsuarioDeletado   0x00153c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-                     test   0x001e58    program     static                          
-             varreTeclado   0x000f14    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\teclado.h
-           verificaEspaco   0x001b54    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-               zero_block   0x001fba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   strcmp   0x001eb6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                   strcpy   0x001ef6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
+     terminalEscreveLetra   0x000fd4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+     terminalEscreveLinha   0x0011a2    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+terminalEscreveLoginRealizado   0x0012e0    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+terminalEscreveTentativaDelecao   0x0015e2    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+terminalEscreveTentativaLogin   0x001222    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+        terminalMomentLog   0x00149e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+terminalUsuarioCadastrado   0x0013ca    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+  terminalUsuarioDeletado   0x001516    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+                     test   0x001e32    program     static                          
+             varreTeclado   0x000eee    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\teclado.h
+           verificaEspaco   0x001b2e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+               zero_block   0x001f94    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -468,81 +468,81 @@ terminalUsuarioCadastrado   0x0013f0    program     extern Z:\home\ajeferson\Des
           lcdAcessoNegado   0x0008ac    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
               menuInicial   0x000920    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
                 menuSenha   0x000a0a    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-        menuSenhaCadastro   0x000a8a    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-    menuUsuarioCadastrado   0x000b10    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-  menuSemEspacoDisponivel   0x000bda    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-        menuRemoveUsuario   0x000c54    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-        menuNenhumUsuario   0x000cda    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-      menuUsuarioInvalido   0x000d58    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-      menuUsuarioRemovido   0x000dde    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-           menuCarregando   0x000ea0    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
-             varreTeclado   0x000f14    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\teclado.h
-     terminalEscreveLetra   0x000ffa    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-     terminalEscreveLinha   0x0011c8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-terminalEscreveTentativaLogin   0x001248    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-terminalEscreveLoginRealizado   0x001306    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-terminalUsuarioCadastrado   0x0013f0    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-        terminalMomentLog   0x0014c4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-  terminalUsuarioDeletado   0x00153c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-terminalEscreveTentativaDelecao   0x001608    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-            processaTecla   0x0016ce    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-      processaMenuInicial   0x001776    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-            processaSenha   0x0017fa    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-               checaSenha   0x0019fe    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-          cadastraUsuario   0x001aa2    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-           verificaEspaco   0x001b54    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-            removeUsuario   0x001bbc    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-           indexDoUsuario   0x001c5c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-         configuraSistema   0x001ce6    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
-                     main   0x001cfc    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
-                     atoi   0x001d54    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                  jSkipWS   0x001d82    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jSkipWS1   0x001d94    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jTstSign   0x001d98    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign1   0x001da4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign2   0x001daa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign3   0x001dac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                    jLoop   0x001dac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jEndLoop   0x001dfa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                     jEnd   0x001e12    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                _do_cinit   0x001e3e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x001e58    program     static                          
-                copy_loop   0x001eb0    program     static                          
-            copy_one_byte   0x001eb6    program     static                          
-             done_copying   0x001ec4    program     static                          
-                     done   0x001eda    program     static                          
-       ___return_lbl00002   0x001eda    program     static                          
-                   strcmp   0x001edc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                    jLoop   0x001efc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                     jEnd   0x001f06    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                   strcpy   0x001f1c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
-                    jLoop   0x001f44    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
-             Delay10KTCYx   0x001f5e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x001f68    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x001f6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x001f6e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x001f76    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x001f7a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay1KTCYx   0x001f8c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x001f96    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x001f98    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x001f9c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x001fa2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x001fac    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-               zero_block   0x001fba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_h   0x001fba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                compare_l   0x001fc2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_l   0x001fc4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 _startup   0x001fcc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x001fdc    program     static                          
-       ___return_lbl00001   0x001fe6    program     static                          
-              Delay10TCYx   0x001fe8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x001ff0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x001ff2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x001ff4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x001ff6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x001ff8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                   __init   0x001ffe    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+        menuSenhaCadastro   0x000a68    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+    menuUsuarioCadastrado   0x000aea    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+  menuSemEspacoDisponivel   0x000bb4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+        menuRemoveUsuario   0x000c2e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+        menuNenhumUsuario   0x000cb4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+      menuUsuarioInvalido   0x000d32    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+      menuUsuarioRemovido   0x000db8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+           menuCarregando   0x000e7a    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
+             varreTeclado   0x000eee    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\teclado.h
+     terminalEscreveLetra   0x000fd4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+     terminalEscreveLinha   0x0011a2    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+terminalEscreveTentativaLogin   0x001222    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+terminalEscreveLoginRealizado   0x0012e0    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+terminalUsuarioCadastrado   0x0013ca    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+        terminalMomentLog   0x00149e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+  terminalUsuarioDeletado   0x001516    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+terminalEscreveTentativaDelecao   0x0015e2    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
+            processaTecla   0x0016a8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+      processaMenuInicial   0x001750    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+            processaSenha   0x0017d4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+               checaSenha   0x0019d8    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+          cadastraUsuario   0x001a7c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+           verificaEspaco   0x001b2e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+            removeUsuario   0x001b96    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+           indexDoUsuario   0x001c36    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
+         configuraSistema   0x001cc0    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
+                     main   0x001cd6    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
+                     atoi   0x001d2e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                  jSkipWS   0x001d5c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jSkipWS1   0x001d6e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jTstSign   0x001d72    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign1   0x001d7e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign2   0x001d84    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign3   0x001d86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                    jLoop   0x001d86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jEndLoop   0x001dd4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                     jEnd   0x001dec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                _do_cinit   0x001e18    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x001e32    program     static                          
+                copy_loop   0x001e8a    program     static                          
+            copy_one_byte   0x001e90    program     static                          
+             done_copying   0x001e9e    program     static                          
+                     done   0x001eb4    program     static                          
+       ___return_lbl00002   0x001eb4    program     static                          
+                   strcmp   0x001eb6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                    jLoop   0x001ed6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                     jEnd   0x001ee0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                   strcpy   0x001ef6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
+                    jLoop   0x001f1e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
+             Delay10KTCYx   0x001f38    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x001f42    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x001f44    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x001f48    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x001f50    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x001f54    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay1KTCYx   0x001f66    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x001f70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x001f72    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x001f76    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x001f7c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x001f86    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               zero_block   0x001f94    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_h   0x001f94    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                compare_l   0x001f9c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_l   0x001f9e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 _startup   0x001fa6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x001fb6    program     static                          
+       ___return_lbl00001   0x001fc0    program     static                          
+              Delay10TCYx   0x001fc2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x001fca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x001fcc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x001fce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x001fd0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x001fd2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                   __init   0x001fd8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
                __config_0   0x300001    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
                __config_1   0x300003    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
                __config_2   0x300005    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
