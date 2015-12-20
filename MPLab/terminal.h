@@ -18,6 +18,15 @@ void terminalEscreveLoginRealizado(char usuario);
 /** Pega o momento do log */
 void terminalMomentLog(char *log);
 
+/** Log de que um usuario foi cadastrado */
+void terminalUsuarioCadastrado(char usuario);
+
+/** Log de que um usuario foi deletado */
+void terminalUsuarioDeletado(char usuario);
+
+/** Log de quando se tenta deletar um usuario inexistente */
+void terminalEscreveTentativaDelecao();
+
 // Implementacoes
 
 void terminalEscreveLetra(char letra) {
@@ -91,7 +100,6 @@ void terminalEscreveTentativaLogin() {
 	terminalMomentLog(linha);
 	strcpy(linha + 23, str);
 	terminalEscreveLinha(linha, 41);
-
 }
 
 void terminalEscreveLoginRealizado(char usuario) {
@@ -103,11 +111,37 @@ void terminalEscreveLoginRealizado(char usuario) {
 	terminalEscreveLinha(linha, 49);
 }
 
+void terminalUsuarioCadastrado(char usuario) {
+	char linha[44];
+	char str[] = "Usuario X cadastrado";
+	terminalMomentLog(linha);
+	strcpy(linha + 23, str);
+	linha[31] = usuario + 48;
+	terminalEscreveLinha(linha, 43);
+}
+
 void terminalMomentLog(char *log) {
 	rtcLeData(log);
 	log[20] = ' ';
 	log[21] = '-';
 	log[22] = ' ';
+}
+
+void terminalUsuarioDeletado(char usuario) {
+	char linha[42];
+	char str[] = "Usuario X deletado";
+	terminalMomentLog(linha);
+	strcpy(linha + 23, str);
+	linha[31] = usuario + 48;
+	terminalEscreveLinha(linha, 41);
+}
+
+void terminalEscreveTentativaDelecao() {
+	char linha[44];
+	char str[] = "Tentativa de delecao";
+	terminalMomentLog(linha);
+	strcpy(linha + 23, str);
+	terminalEscreveLinha(linha, 43);
 }
 
 #endif

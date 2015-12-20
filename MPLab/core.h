@@ -124,7 +124,6 @@ char processaSenha(char tecla, char secreto, char estado) {
 				if(usuario < 0) {
 					lcdAcessoNegado();
 					terminalEscreveTentativaLogin();
-					//TODO melhorar logs
 					return 3;
 				}
 			}
@@ -137,26 +136,27 @@ char processaSenha(char tecla, char secreto, char estado) {
 				if(usuario == 0) {
 					deslocamento = 0;
 					menuSenhaCadastro();
+					terminalEscreveLoginRealizado(usuario);
 					return 5;
 				} else {
 					lcdAcessoNegado();
 					terminalEscreveTentativaLogin();
-					// TODO melhorar log
 					return 3;
 				}
 			} else if (estado == 5) { // Cadastro
 				usuario = cadastraUsuario();
 				menuUsuarioCadastrado(usuario);
+				terminalUsuarioCadastrado(usuario);
 				return 3;
 			} else if (estado == 6) { // Pre-remocao
 				if(usuario == 0) {
 					deslocamento = 0;
 					menuRemoveUsuario();
+					terminalEscreveLoginRealizado(usuario);
 					return 7;
 				} else {
 					lcdAcessoNegado();
 					terminalEscreveTentativaLogin();
-					// TODO melhorar log
 					return 3;
 				}
 			} else if (estado == 7) {
@@ -167,8 +167,10 @@ char processaSenha(char tecla, char secreto, char estado) {
 				} else {
 					if(removeUsuario(usuario)) {
 						menuUsuarioRemovido(usuario);
+						terminalUsuarioDeletado(usuario);
 					} else {
 						menuUsuarioInvalido();
+						terminalEscreveTentativaDelecao();
 					}
 					return 3;
 				}
