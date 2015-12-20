@@ -1,34 +1,36 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Sat Dec 19 15:44:50 2015
+Linker Map File - Created Sun Dec 20 14:28:03 2015
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
                    .cinit    romdata   0x000006    program   0x00000e
-           .code_source.o       code   0x000014    program   0x0012c4
-                   STDLIB       code   0x0012d8    program   0x0000ea
-               _cinit_scn       code   0x0013c2    program   0x00009e
-                   STRING       code   0x001460    program   0x000082
-              D1KTCYXCODE       code   0x0014e2    program   0x000020
-                    .code       code   0x001502    program   0x000020
-             _startup_scn       code   0x001522    program   0x00001c
-              D10TCYXCODE       code   0x00153e    program   0x000016
-           .code___init.o       code   0x001554    program   0x000002
-         .romdata_c018i.o    romdata   0x001556    program   0x000000
-        .idata_source.o_i    romdata   0x001556    program   0x0000bd
-        .romdata_source.o    romdata   0x001556    program   0x000000
-             .stringtable    romdata   0x001556    program   0x000000
-        .romdata___init.o    romdata   0x001556    program   0x000000
-        .idata___init.o_i    romdata   0x001613    program   0x000000
-         .idata_c018i.o_i    romdata   0x001613    program   0x000000
-            .code_c018i.o       code   0x001614    program   0x000000
+           .code_source.o       code   0x000014    program   0x001576
+                   STDLIB       code   0x00158a    program   0x0000ea
+               _cinit_scn       code   0x001674    program   0x00009e
+                   STRING       code   0x001712    program   0x000082
+             D10KTCYXCODE       code   0x001794    program   0x00002e
+              D1KTCYXCODE       code   0x0017c2    program   0x000020
+                    .code       code   0x0017e2    program   0x000020
+             _startup_scn       code   0x001802    program   0x00001c
+              D10TCYXCODE       code   0x00181e    program   0x000016
+           .code___init.o       code   0x001834    program   0x000002
+        .idata_source.o_i    romdata   0x001836    program   0x0000bd
+        .romdata_source.o    romdata   0x001836    program   0x000000
+         .romdata_c018i.o    romdata   0x001836    program   0x000000
+             .stringtable    romdata   0x001836    program   0x000000
+        .romdata___init.o    romdata   0x001836    program   0x000000
+        .idata___init.o_i    romdata   0x0018f3    program   0x000000
+         .idata_c018i.o_i    romdata   0x0018f3    program   0x000000
+            .code_c018i.o       code   0x0018f4    program   0x000000
   .config_300001_source.o    romdata   0x300001    program   0x000001
   .config_300003_source.o    romdata   0x300003    program   0x000001
   .config_300005_source.o    romdata   0x300005    program   0x000001
                  .tmpdata      udata   0x000000       data   0x000004
                 MATH_DATA      udata   0x000004       data   0x000002
-                DELAYDAT1      udata   0x000006       data   0x000001
+                DELAYDAT2      udata   0x000006       data   0x000001
+                DELAYDAT1      udata   0x000007       data   0x000001
           .idata_source.o      idata   0x000100       data   0x0000bd
           .udata_source.o      udata   0x0001bd       data   0x000010
            .udata_c018i.o      udata   0x0001cd       data   0x00000a
@@ -43,64 +45,70 @@ Linker Map File - Created Sat Dec 19 15:44:50 2015
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x001612      
+                            0x000000    0x0018f2      
                             0x300001    0x300001      
                             0x300003    0x300003      
                             0x300005    0x300005      
-            5654 out of 33048 program addresses used, program memory utilization is 17%
+            6390 out of 33048 program addresses used, program memory utilization is 19%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                    D10_1   0x00154e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x001546    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D1K_1   0x0014ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x0014ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-              Delay10TCYx   0x00153e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-              Delay1KTCYx   0x0014e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D10TCYXCODE_000A   0x001548    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x00154a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x00154c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D1KTCYXCODE_0010   0x0014f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x0014f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-       ___return_lbl00000   0x000004    program     static                          
+                   D10K_1   0x0017a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x0017ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00179e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x00182e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x001826    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D1K_1   0x0017ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x0017cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+             Delay10KTCYx   0x001794    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x00181e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+              Delay1KTCYx   0x0017c2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+       _D10KTCYXCODE_0010   0x0017a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x0017b0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x001828    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x00182a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x00182c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D1KTCYXCODE_0010   0x0017d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x0017d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
        ___return_lbl00000   0x000056    program     static                          
-       ___return_lbl00001   0x00153c    program     static                          
-       ___return_lbl00002   0x00145e    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x00181c    program     static                          
+       ___return_lbl00002   0x001710    program     static                          
                __config_0   0x300001    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
                __config_1   0x300003    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
                __config_2   0x300005    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
-                   __init   0x001554    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+                   __init   0x001834    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
                __tmplbl_0   0x000032    program     static                          
                __tmplbl_1   0x00002e    program     static                          
-            __zero_memory   0x001502    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                _do_cinit   0x0013c2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+            __zero_memory   0x0017e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                _do_cinit   0x001674    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 _startup   0x001522    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     atoi   0x0012d8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 _startup   0x001802    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     atoi   0x00158a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
           cadastraUsuario   0x001032    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
                checaSenha   0x000f8e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-                compare_l   0x001518    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-         configuraSistema   0x001276    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
-                copy_loop   0x001434    program     static                          
-            copy_one_byte   0x00143a    program     static                          
-                     done   0x00145e    program     static                          
-             done_copying   0x001448    program     static                          
+                compare_l   0x0017f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+         configuraSistema   0x001518    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
+                copy_loop   0x0016e6    program     static                          
+            copy_one_byte   0x0016ec    program     static                          
+                     done   0x001710    program     static                          
+             done_copying   0x0016fa    program     static                          
            indexDoUsuario   0x0011ec    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-                     jEnd   0x00148a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                     jEnd   0x001396    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jEndLoop   0x00137e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                    jLoop   0x0014c8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
-                    jLoop   0x001480    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                    jLoop   0x001330    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                  jSkipWS   0x001306    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jSkipWS1   0x001318    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jTstSign   0x00131c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign1   0x001328    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign2   0x00132e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign3   0x001330    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                     jEnd   0x00173c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                     jEnd   0x001648    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jEndLoop   0x001630    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                    jLoop   0x00177a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
+                    jLoop   0x001732    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                    jLoop   0x0015e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                  jSkipWS   0x0015b8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jSkipWS1   0x0015ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jTstSign   0x0015ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign1   0x0015da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign2   0x0015e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign3   0x0015e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
           lcdAcessoNegado   0x000222    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
        lcdAcessoPermitido   0x0001a2    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
         lcdDeslocaDireita   0x000198    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
@@ -113,10 +121,10 @@ Linker Map File - Created Sat Dec 19 15:44:50 2015
           lcdInicioLinha1   0x000184    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
           lcdInicioLinha2   0x00018e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
                  lcdLimpa   0x0000a6    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\lcd.h
-                     loop   0x001532    program     static                          
-                   loop_h   0x001510    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_l   0x00151a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     main   0x001288    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
+                     loop   0x001812    program     static                          
+                   loop_h   0x0017f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_l   0x0017fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     main   0x00152e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
               menuInicial   0x000296    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
         menuNenhumUsuario   0x000650    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
         menuRemoveUsuario   0x0005ca    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\menu.h
@@ -130,16 +138,21 @@ Linker Map File - Created Sat Dec 19 15:44:50 2015
             processaSenha   0x000db4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
             processaTecla   0x000c8a    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
             removeUsuario   0x00114c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-                   strcmp   0x001460    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                   strcpy   0x0014a0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
+             rtcEnviaByte   0x001292    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
+     rtcEnviaComandoEDado   0x0013f2    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
+            rtcInicializa   0x0014e0    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
+                rtcLeDado   0x00141c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
+        rtcSCKLEnviaPulso   0x001276    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
+                   strcmp   0x001712    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                   strcpy   0x001752    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
      terminalEscreveLetra   0x0008fc    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
      terminalEscreveLinha   0x000aca    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
 terminalEscreveLoginRealizado   0x000bd4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
 terminalEscreveTentativaLogin   0x000b4a    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\terminal.h
-                     test   0x0013dc    program     static                          
+                     test   0x00168e    program     static                          
              varreTeclado   0x000816    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\teclado.h
            verificaEspaco   0x0010e4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-               zero_block   0x001510    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               zero_block   0x0017f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -182,7 +195,8 @@ terminalEscreveTentativaLogin   0x000b4a    program     extern Z:\home\ajeferson
                  DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-            DelayCounter1   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+            DelayCounter1   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
                   ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  ECCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -448,50 +462,61 @@ terminalEscreveLoginRealizado   0x000bd4    program     extern Z:\home\ajeferson
            verificaEspaco   0x0010e4    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
             removeUsuario   0x00114c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
            indexDoUsuario   0x0011ec    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
-         configuraSistema   0x001276    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
-                     main   0x001288    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
-                     atoi   0x0012d8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                  jSkipWS   0x001306    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jSkipWS1   0x001318    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jTstSign   0x00131c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign1   0x001328    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign2   0x00132e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                jTstSign3   0x001330    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                    jLoop   0x001330    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                 jEndLoop   0x00137e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                     jEnd   0x001396    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
-                _do_cinit   0x0013c2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x0013dc    program     static                          
-                copy_loop   0x001434    program     static                          
-            copy_one_byte   0x00143a    program     static                          
-             done_copying   0x001448    program     static                          
-                     done   0x00145e    program     static                          
-       ___return_lbl00002   0x00145e    program     static                          
-                   strcmp   0x001460    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                    jLoop   0x001480    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                     jEnd   0x00148a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                   strcpy   0x0014a0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
-                    jLoop   0x0014c8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
-              Delay1KTCYx   0x0014e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x0014ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x0014ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x0014f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x0014f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x001502    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-               zero_block   0x001510    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_h   0x001510    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                compare_l   0x001518    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_l   0x00151a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 _startup   0x001522    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x001532    program     static                          
-       ___return_lbl00001   0x00153c    program     static                          
-              Delay10TCYx   0x00153e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x001546    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x001548    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x00154a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x00154c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x00154e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                   __init   0x001554    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+        rtcSCKLEnviaPulso   0x001276    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
+             rtcEnviaByte   0x001292    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
+     rtcEnviaComandoEDado   0x0013f2    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
+                rtcLeDado   0x00141c    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
+            rtcInicializa   0x0014e0    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\rtc.h
+         configuraSistema   0x001518    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
+                     main   0x00152e    program     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
+                     atoi   0x00158a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                  jSkipWS   0x0015b8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jSkipWS1   0x0015ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jTstSign   0x0015ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign1   0x0015da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign2   0x0015e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                    jLoop   0x0015e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                jTstSign3   0x0015e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                 jEndLoop   0x001630    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                     jEnd   0x001648    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\atoi.asm
+                _do_cinit   0x001674    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x00168e    program     static                          
+                copy_loop   0x0016e6    program     static                          
+            copy_one_byte   0x0016ec    program     static                          
+             done_copying   0x0016fa    program     static                          
+                     done   0x001710    program     static                          
+       ___return_lbl00002   0x001710    program     static                          
+                   strcmp   0x001712    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                    jLoop   0x001732    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                     jEnd   0x00173c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                   strcpy   0x001752    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
+                    jLoop   0x00177a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcpy.asm
+             Delay10KTCYx   0x001794    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00179e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x0017a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x0017a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x0017ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x0017b0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay1KTCYx   0x0017c2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x0017cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x0017ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x0017d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x0017d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x0017e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               zero_block   0x0017f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_h   0x0017f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                compare_l   0x0017f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_l   0x0017fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 _startup   0x001802    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x001812    program     static                          
+       ___return_lbl00001   0x00181c    program     static                          
+              Delay10TCYx   0x00181e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x001826    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x001828    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x00182a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x00182c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x00182e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                   __init   0x001834    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
                __config_0   0x300001    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
                __config_1   0x300003    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
                __config_2   0x300005    program     static Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\source.c
@@ -499,7 +524,8 @@ terminalEscreveLoginRealizado   0x000bd4    program     extern Z:\home\ajeferson
                      SIGN   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                 __FPFLAGS   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-            DelayCounter1   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
              deslocamento   0x000100       data     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
               countSenhas   0x000101       data     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
                    senhas   0x000102       data     extern Z:\home\ajeferson\Desktop\XaxaFinalProject\MPLab\core.h
@@ -520,8 +546,8 @@ terminalEscreveLoginRealizado   0x000bd4    program     extern Z:\home\ajeferson
                      UFRM   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 UFRMHbits   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UFRMH   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  UIRbits   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                       UIR   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  UIRbits   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   UIEbits   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                       UIE   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEIRbits   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -536,22 +562,22 @@ terminalEscreveLoginRealizado   0x000bd4    program     extern Z:\home\ajeferson
                 UADDRbits   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UCFGbits   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UCFG   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     UEP0   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP0bits   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     UEP0   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP1   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP1bits   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP2   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP2bits   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     UEP3   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP3bits   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     UEP4   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     UEP3   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP4bits   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     UEP5   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     UEP4   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP5bits   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     UEP5   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP6bits   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP6   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 UEP7bits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP7   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 UEP7bits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP8   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP8bits   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP9   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -560,18 +586,18 @@ terminalEscreveLoginRealizado   0x000bd4    program     extern Z:\home\ajeferson
                 UEP10bits   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UEP11   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 UEP11bits   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                UEP12bits   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UEP12   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                UEP12bits   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 UEP13bits   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UEP13   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 UEP14bits   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UEP14   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    UEP15   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 UEP15bits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    UEP15   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -590,36 +616,36 @@ terminalEscreveLoginRealizado   0x000bd4    program     extern Z:\home\ajeferson
                      LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -627,8 +653,8 @@ terminalEscreveLoginRealizado   0x000bd4    program     extern Z:\home\ajeferson
                    EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -644,31 +670,31 @@ terminalEscreveLoginRealizado   0x000bd4    program     extern Z:\home\ajeferson
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                CCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    CCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+             ECCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               CCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   CCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-             ECCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  ECCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
              ECCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm

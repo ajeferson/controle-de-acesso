@@ -28,12 +28,18 @@
 // Variaveis de terminal
 #define TERMINAL LATCbits.LATC0
 
+// Variaveis de RTC
+#define RTC_RST LATAbits.LATA0
+#define RTC_SCLK LATAbits.LATA1
+#define RTC_IO PORTAbits.RA2
+
 // Include da galera
 #include "lcd.h"
 #include "menu.h"
 #include "teclado.h"
 #include "terminal.h"
 #include "core.h"
+#include "rtc.h"
 
 void configuraSistema();
 void lcdEnviaInstrucao(char instrucao);
@@ -43,10 +49,12 @@ void delay_us(int quantidade);
 /** Seta os tris da galera */
 void configuraSistema() {
 	ADCON1=0x0F;
+	TRISA = 0b00000000;
 	TRISD = 0b00000000;  
 	TRISE = 0b11111000;
 	TRISB = 0b00001111;
 	TRISC = 0b00000000;
+	RTC_RST = 0;
 }
 
 void main() {
@@ -67,6 +75,9 @@ void main() {
 	configuraSistema();
 	lcdInicializa();
 	menuInicial();
+
+	rtcInicializa();
+	rtcLeDado(0x87);
 
 	while(1) {
 		tecla = varreTeclado();
