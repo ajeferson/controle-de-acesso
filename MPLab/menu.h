@@ -32,6 +32,9 @@ void menuUsuarioInvalido();
 /** Menu mostrando que um usuario foi removido */
 void menuUsuarioRemovido(char usuario);
 
+/** Mostra a mensagem carregando */
+void menuCarregando();
+
 /** Implementacoes */
 
 void menuInicial() {
@@ -106,6 +109,13 @@ void menuUsuarioRemovido(char usuario) {
 	lcdEscrevePalavra(linha1, 9);
 	lcdInicioLinha2();
 	lcdEscrevePalavra(linha2, 8);
+}
+
+void menuCarregando() {
+	char linha1[14] = "Carregando...";
+	lcdLimpa();
+	lcdInicioLinha1();
+	lcdEscrevePalavra(linha1, 13);
 }
 
 #endif

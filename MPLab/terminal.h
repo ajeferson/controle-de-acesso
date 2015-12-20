@@ -15,6 +15,9 @@ void terminalEscreveTentativaLogin();
 /** Escreve no terminal que um usuario conseguiu acesso */
 void terminalEscreveLoginRealizado(char usuario);
 
+/** Pega o momento do log */
+void terminalMomentLog(char *log);
+
 // Implementacoes
 
 void terminalEscreveLetra(char letra) {
@@ -83,14 +86,28 @@ void terminalEscreveLinha(char *linha, int tamanho) {
 }
 
 void terminalEscreveTentativaLogin() {
-	char linha[19] = "Tentativa de login";
-	terminalEscreveLinha(linha, 18);
+	char linha[42];
+	char str[] = "Tentativa de login";
+	terminalMomentLog(linha);
+	strcpy(linha + 23, str);
+	terminalEscreveLinha(linha, 41);
+
 }
 
 void terminalEscreveLoginRealizado(char usuario) {
-	char linha[27] = "Usuario X conseguiu acesso";
-	linha[8] = usuario + 48;
-	terminalEscreveLinha(linha, 26);
+	char linha[50];
+	char str[] = "Usuario X conseguiu acesso";
+	terminalMomentLog(linha);
+	strcpy(linha + 23, str);
+	linha[31] = usuario + 48;
+	terminalEscreveLinha(linha, 49);
+}
+
+void terminalMomentLog(char *log) {
+	rtcLeData(log);
+	log[20] = ' ';
+	log[21] = '-';
+	log[22] = ' ';
 }
 
 #endif

@@ -34,12 +34,12 @@
 #define RTC_IO PORTAbits.RA2
 
 // Include da galera
+#include "rtc.h"
 #include "lcd.h"
 #include "menu.h"
 #include "teclado.h"
 #include "terminal.h"
 #include "core.h"
-#include "rtc.h"
 
 void configuraSistema();
 void lcdEnviaInstrucao(char instrucao);
@@ -61,7 +61,6 @@ void main() {
 
 	char tecla;
 	char estado = 1;
-	char data[20];
 
 	/** Estados
 	     1 - Menu inicial
@@ -75,14 +74,15 @@ void main() {
 
 	configuraSistema();
 	lcdInicializa();
-	menuInicial();
 
+	menuCarregando();
 	rtcInicializa();
-	rtcLeData(data);
-	terminalEscreveLinha(data, 19);
+
+	menuInicial();
 
 	while(1) {
 		tecla = varreTeclado();
 		estado = processaTecla(tecla, estado);
 	}
+
 }
