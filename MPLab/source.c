@@ -61,6 +61,7 @@ void main() {
 
 	char tecla;
 	char estado = 1;
+	char data[20];
 
 	/** Estados
 	     1 - Menu inicial
@@ -77,7 +78,8 @@ void main() {
 	menuInicial();
 
 	rtcInicializa();
-	rtcLeDado(0x87);
+	rtcLeData(data);
+	terminalEscreveLinha(data, 19);
 
 	while(1) {
 		tecla = varreTeclado();
